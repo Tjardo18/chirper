@@ -39,3 +39,8 @@ class UserFactory extends Factory
         ]);
     }
 }
+
+// how do i run this script?
+// php artisan tinker
+// User::factory()->count(10)->create();
+// exit
