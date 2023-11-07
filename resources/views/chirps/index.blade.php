@@ -22,7 +22,7 @@
                             <small class="text-sm text-gray-600"> &middot; {{ __('edited') }}</small>
                             @endunless
                         </div>
-                        @if ($chirp->user->is(auth()->user()))
+                        @if (auth()->user()->isAdmin || $chirp->user->is(auth()->user()))
                         <x-dropdown>
                             <x-slot name="trigger">
                                 <button>
